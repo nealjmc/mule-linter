@@ -53,5 +53,9 @@ publishing {
             name = 'staging'
             url = layout.buildDirectory.dir("staging-deploy")
         }
+        maven {
+            name = 'local'
+            url = uri("${System.getProperty("user.home")}/.m2/repository")
+        }
     }
 }

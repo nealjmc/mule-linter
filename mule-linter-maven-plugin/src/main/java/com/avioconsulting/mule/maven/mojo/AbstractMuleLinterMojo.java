@@ -11,7 +11,7 @@ import java.util.List;
 
 public abstract class AbstractMuleLinterMojo extends AbstractMojo {
 
-    @Parameter(property = "outputDirectory", defaultValue = "${project.build.directory}/mule-linter", readonly = true, required = true )
+    @Parameter(property = "outputDirectory", defaultValue = "${project.build.directory}/mule-linter", readonly = false, required = true )
     protected File outputDirectory;
 
 
